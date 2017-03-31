@@ -1,17 +1,18 @@
 import * as request from 'request-promise'
 
+export const ENDPOINTS={
 
-/* FREE JSON API EXAMPLE */
+    GAME_SEARCH_URL: 'https://www.giantbomb.com/api/search/',
+    GAME_URL: 'https://www.giantbomb.com/api/game/3030-4725/',
+    TV_SEARCH_URL: 'http://api.tvmaze.com/search/shows',
+    MOVIE_SEARCH_URL: 'https://api.themoviedb.org/3/search/movie',
+    MOVIE_DISCOVER_URL: 'https://api.themoviedb.org/3/discover/movie',
+    MOVIE_GENRE_URL: 'https://api.themoviedb.org/3/genre/movie/list'
+}
+export const KEYS={
 
-/* WEATHER: https://www.apixu.com/api-explorer.aspx */
-
-/* IMAGES: https://pixabay.com/api/docs/ */
-
-export const ENDPOINTS = {
-
-    WEATHER_API_URL: 'http://api.apixu.com/v1/current.json',
-    PIXABAY_API_URL: 'https://pixabay.com/api/'
-
+    GAME_API_KEY: 'd390d94524f6a9fdf1a9b92f61ccf5b54f0e2d5d',
+    MOVIE_API_KEY: '14b5bcdff4d38556110f715ae45bb996'
 }
 
 /* REQUEST (Promise) DOCUMENTATION */
@@ -20,10 +21,11 @@ export const ENDPOINTS = {
 export function get( url, queryParameters ) {
 
     //returns a Promise which can be used with the async - await syntax
-
+    console.log( url )
     return request.get( {
         json: true,
-        uri: url,
+        url: url,
         qs: queryParameters
     })
 }
+//Mansour CHAUVIN Arnaud Azam

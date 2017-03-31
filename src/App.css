@@ -35,3 +35,22 @@
 .error-toast {
     color: #e74c3c;
 }
+.history-toast {
+    font-weight: bold;
+    background-color: #26a69a;
+}
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+footer.page-footer{
+      background-color: #26a69a;
+}
+nav.nav-extended{
+      background-color: #26a69a;
+}

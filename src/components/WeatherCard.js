@@ -6,7 +6,7 @@ class WeatherCard extends Component {
 
     render() {
 
-        const { locationName, temperature, weatherConditionText, weatherConditionIcon, windSpeed, picture } = this.props
+        const { locationName, temperature, weatherConditionText, weatherConditionIcon, windSpeed, picture }=this.props
 
         return (
             <div className="card horizontal" style={ { margin: 'auto' } }>
